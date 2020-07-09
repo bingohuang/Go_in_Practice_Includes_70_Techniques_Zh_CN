@@ -95,7 +95,7 @@ var opts struct { // [1]Struct containing the defined flags
 }
 func main() {
     flags.Parse(&opts) // [2]Parses the flag values into the struct
-    if opts.Spanish == true { // [3]
+    if opts.Spanish == true { // [3]Properties on opts used with flag values
         fmt.Printf("Hola %s!\n", opts.Name)
     } else {
         fmt.Printf("Hello %s!\n", opts.Name)
